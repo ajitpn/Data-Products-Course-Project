@@ -1,0 +1,75 @@
+---
+title       : Storm Data Explorer 
+subtitle    : Developing Data Products Course Project 
+author      : Ajit Nambissan
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+--- .class #id 
+
+## Storm Data Explorer
+
+
+
+- Created as part of Developing Data Products Course Project
+
+- The application is built using shiny
+
+- The presentation is created using slidify
+
+
+--- 
+
+## The Application
+
+
+
+- Application provides a user friendly way to explore the Storm Data
+
+- The Storm data from 1995 to 2011 is cleaned and grouped into 11 broad event types
+
+- The user can filter the data on year range and/or event types
+
+- The filtered data is presented by state on the map and by year as plots
+
+- Facility to download the data into csv form is also provided
+
+
+---
+
+## The Data
+
+
+- Application is based on the U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database
+
+- A subset of the NCOA data between 1995 and 2011 is cleaned and grouped into 
+11 broad event types
+
+(The cleanup and grouping were done earlier as part of the Reproducible Research project)
+
+```{r}
+dt <- read.csv('../data/aggStormData.csv')
+head(dt)
+
+```
+
+---
+
+## Where to find the application? 
+
+
+
+
+- The appliction is deployed on Shiny server at this [link](https://ajitpn.shinyapps.io/Data-Products-Course-Project/)
+
+- The source and this presentation is available on this Github [link](https://github.com/ajitpn/Data-Products-Course-Project.git)
+ 
+
+###                  THANK YOU
+
+---
